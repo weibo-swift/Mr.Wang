@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Kingfisher (3.10.2)
+  - ThPullRefresh (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - ThPullRefresh
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  ThPullRefresh: 4a5fe482c79d4532e1539853ca3251d89bd1b03d
+
+PODFILE CHECKSUM: ec8c7433e5a3e64011c505cf36ad77994bd0c946
+
+COCOAPODS: 1.2.1

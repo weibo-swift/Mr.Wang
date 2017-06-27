@@ -1,0 +1,6 @@
+framework module ThPullRefresh {
+  umbrella header "ThPullRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}
