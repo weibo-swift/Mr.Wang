@@ -14,14 +14,17 @@
 		5794FDD11F00A6F400593072 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDD01F00A6F400593072 /* __Tests.swift */; };
 		5794FDDC1F00A6F400593072 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDDB1F00A6F400593072 /* __UITests.swift */; };
 		5794FDF11F00A8D100593072 /* SystemUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDEA1F00A8D100593072 /* SystemUntil.swift */; };
-		5794FDF21F00A8D100593072 /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDEC1F00A8D100593072 /* FinderViewController.swift */; };
-		5794FDF31F00A8D100593072 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDED1F00A8D100593072 /* HomeViewController.swift */; };
-		5794FDF41F00A8D100593072 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDEE1F00A8D100593072 /* MessageViewController.swift */; };
-		5794FDF51F00A8D100593072 /* PocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDEF1F00A8D100593072 /* PocketViewController.swift */; };
 		5794FDF61F00A8D100593072 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDF01F00A8D100593072 /* TabBarViewController.swift */; };
 		5794FE0B1F00B1B300593072 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FE0A1F00B1B300593072 /* CoreDataManager.swift */; };
-		5794FE131F01032600593072 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FE121F01032600593072 /* HomeTableViewCell.swift */; };
 		5794FE1E1F01172100593072 /* __.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5794FE1C1F01172100593072 /* __.xcdatamodeld */; };
+		57A021C01F04E2CA00EE1112 /* CenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021B41F04E2CA00EE1112 /* CenterCollectionViewCell.swift */; };
+		57A021C11F04E2CA00EE1112 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021B51F04E2CA00EE1112 /* CenterViewController.swift */; };
+		57A021C21F04E2CA00EE1112 /* LineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021B61F04E2CA00EE1112 /* LineLayout.swift */; };
+		57A021C31F04E2CA00EE1112 /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021B81F04E2CA00EE1112 /* FinderViewController.swift */; };
+		57A021C41F04E2CA00EE1112 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021BA1F04E2CA00EE1112 /* HomeTableViewCell.swift */; };
+		57A021C51F04E2CA00EE1112 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021BB1F04E2CA00EE1112 /* HomeViewController.swift */; };
+		57A021C61F04E2CA00EE1112 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021BD1F04E2CA00EE1112 /* MessageViewController.swift */; };
+		57A021C71F04E2CA00EE1112 /* PocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A021BF1F04E2CA00EE1112 /* PocketViewController.swift */; };
 		868EEA8C2EA9E3F238AC9922 /* Pods___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EC152F62424406B7EBED78 /* Pods___.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +60,17 @@
 		5794FDDB1F00A6F400593072 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		5794FDDD1F00A6F400593072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5794FDEA1F00A8D100593072 /* SystemUntil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemUntil.swift; sourceTree = "<group>"; };
-		5794FDEC1F00A8D100593072 /* FinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
-		5794FDED1F00A8D100593072 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5794FDEE1F00A8D100593072 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		5794FDEF1F00A8D100593072 /* PocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketViewController.swift; sourceTree = "<group>"; };
 		5794FDF01F00A8D100593072 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5794FE0A1F00B1B300593072 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		5794FE121F01032600593072 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		5794FE1D1F01172100593072 /* __.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = __.xcdatamodel; sourceTree = "<group>"; };
+		57A021B41F04E2CA00EE1112 /* CenterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCollectionViewCell.swift; sourceTree = "<group>"; };
+		57A021B51F04E2CA00EE1112 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		57A021B61F04E2CA00EE1112 /* LineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayout.swift; sourceTree = "<group>"; };
+		57A021B81F04E2CA00EE1112 /* FinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
+		57A021BA1F04E2CA00EE1112 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		57A021BB1F04E2CA00EE1112 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		57A021BD1F04E2CA00EE1112 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		57A021BF1F04E2CA00EE1112 /* PocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketViewController.swift; sourceTree = "<group>"; };
 		6D7DD5734143FA1A161A9FE1 /* Pods-微博.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.debug.xcconfig"; sourceTree = "<group>"; };
 		96EC152F62424406B7EBED78 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,14 +168,57 @@
 		5794FDEB1F00A8D100593072 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5794FDEC1F00A8D100593072 /* FinderViewController.swift */,
-				5794FDED1F00A8D100593072 /* HomeViewController.swift */,
-				5794FDEE1F00A8D100593072 /* MessageViewController.swift */,
-				5794FDEF1F00A8D100593072 /* PocketViewController.swift */,
+				57A021B31F04E2CA00EE1112 /* Center */,
+				57A021B71F04E2CA00EE1112 /* Finder */,
+				57A021B91F04E2CA00EE1112 /* Home */,
+				57A021BC1F04E2CA00EE1112 /* Message */,
+				57A021BE1F04E2CA00EE1112 /* Pocket */,
 				5794FDF01F00A8D100593072 /* TabBarViewController.swift */,
-				5794FE121F01032600593072 /* HomeTableViewCell.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		57A021B31F04E2CA00EE1112 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				57A021B51F04E2CA00EE1112 /* CenterViewController.swift */,
+				57A021B41F04E2CA00EE1112 /* CenterCollectionViewCell.swift */,
+				57A021B61F04E2CA00EE1112 /* LineLayout.swift */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		57A021B71F04E2CA00EE1112 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				57A021B81F04E2CA00EE1112 /* FinderViewController.swift */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		57A021B91F04E2CA00EE1112 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				57A021BA1F04E2CA00EE1112 /* HomeTableViewCell.swift */,
+				57A021BB1F04E2CA00EE1112 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		57A021BC1F04E2CA00EE1112 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				57A021BD1F04E2CA00EE1112 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		57A021BE1F04E2CA00EE1112 /* Pocket */ = {
+			isa = PBXGroup;
+			children = (
+				57A021BF1F04E2CA00EE1112 /* PocketViewController.swift */,
+			);
+			path = Pocket;
 			sourceTree = "<group>";
 		};
 		94D17168F0F6AF7480BB661D /* Pods */ = {
@@ -375,15 +424,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5794FDF61F00A8D100593072 /* TabBarViewController.swift in Sources */,
-				5794FDF31F00A8D100593072 /* HomeViewController.swift in Sources */,
-				5794FDF21F00A8D100593072 /* FinderViewController.swift in Sources */,
-				5794FDF51F00A8D100593072 /* PocketViewController.swift in Sources */,
+				57A021C31F04E2CA00EE1112 /* FinderViewController.swift in Sources */,
+				57A021C21F04E2CA00EE1112 /* LineLayout.swift in Sources */,
 				5794FDB91F00A6F400593072 /* AppDelegate.swift in Sources */,
-				5794FE131F01032600593072 /* HomeTableViewCell.swift in Sources */,
 				5794FE0B1F00B1B300593072 /* CoreDataManager.swift in Sources */,
+				57A021C11F04E2CA00EE1112 /* CenterViewController.swift in Sources */,
+				57A021C41F04E2CA00EE1112 /* HomeTableViewCell.swift in Sources */,
+				57A021C51F04E2CA00EE1112 /* HomeViewController.swift in Sources */,
+				57A021C01F04E2CA00EE1112 /* CenterCollectionViewCell.swift in Sources */,
 				5794FE1E1F01172100593072 /* __.xcdatamodeld in Sources */,
-				5794FDF41F00A8D100593072 /* MessageViewController.swift in Sources */,
+				57A021C61F04E2CA00EE1112 /* MessageViewController.swift in Sources */,
 				5794FDF11F00A8D100593072 /* SystemUntil.swift in Sources */,
+				57A021C71F04E2CA00EE1112 /* PocketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

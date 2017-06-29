@@ -12,15 +12,6 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let centerBtn : UIButton = UIButton()
-//        centerBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), for: .normal)
-//        centerBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .selected)
-//        
-//        centerBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
-//        centerBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .selected)
-//        
-//        centerBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
         
         self.creatSubViewController()
         
@@ -83,8 +74,7 @@ extension TabBarViewController : UITabBarControllerDelegate{
         
         button.setImage(buttonImage, for: UIControlState.normal)
         button.setImage(selectedimg, for: UIControlState.selected)
-//        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
-//        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .selected)
+
         //去掉阴影
         button.adjustsImageWhenDisabled = true;
         //按钮的代理方法
@@ -117,7 +107,10 @@ extension TabBarViewController{
     
     
     func addOrderView(){
-        print("wqee")
+    
+        let centerViewControlller = CenterViewController()
+        self.present(centerViewControlller, animated: true, completion: nil)
+        
     }
 }
 

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         UITabBar.appearance().tintColor = UIColor.black
         //渲染状态栏为白色 .plist文件中增加相关字段
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default;
         
         self.window?.rootViewController=root
     
