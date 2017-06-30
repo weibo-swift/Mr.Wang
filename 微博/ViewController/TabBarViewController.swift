@@ -10,6 +10,9 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    var animationManager : AnimationManager = AnimationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,25 +30,25 @@ extension TabBarViewController : UITabBarControllerDelegate{
         let view = HomeViewController()
         let nav = UINavigationController(rootViewController: view)
     
-        let item1 : UITabBarItem = UITabBarItem(title: "item2", image: UIImage(named: "womail_btn_menu_gt_default"), selectedImage: UIImage(named: "womail_btn_menu_gt_pressed"))
+        let item1 : UITabBarItem = UITabBarItem(title: "微博", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
         nav.tabBarItem = item1
         
         let frist = MessageViewController()
         let nav1 = UINavigationController(rootViewController: frist)
         
-        let item2 = UITabBarItem(title: "item4", image: UIImage(named: "womail_btn_menu_md_default"), selectedImage: UIImage(named: "womail_btn_menu_md_pressed"))
+        let item2 = UITabBarItem(title: "消息", image: UIImage(named: "tabbar_message_center"), selectedImage: UIImage(named: "tabbar_message_center_selected"))
         nav1.tabBarItem = item2
         
         let sec = FinderViewController()
         let  nav2 = UINavigationController(rootViewController: sec)
         
-        let item3 : UITabBarItem = UITabBarItem(title: "item1", image: UIImage(named: "womail_btn_menu_fx_default"), selectedImage:UIImage(named: "womail_btn_menu_fx_pressed"))
+        let item3 : UITabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "tabbar_discover"), selectedImage:UIImage(named: "tabbar_discover_selected"))
         nav2.tabBarItem = item3
         
         let four = PocketViewController()
         let nav3 = UINavigationController(rootViewController: four)
         
-        let item4 : UITabBarItem = UITabBarItem(title: "item3", image: UIImage(named: "womail_btn_menu_kd_default"), selectedImage: UIImage(named: "womail_btn_menu_kd_pressed"))
+        let item4 : UITabBarItem = UITabBarItem(title: "我", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
         nav3.tabBarItem = item4
         
         let five = UIViewController()
@@ -109,8 +112,36 @@ extension TabBarViewController{
     func addOrderView(){
     
         let centerViewControlller = CenterViewController()
+        //
+        centerViewControlller.modalPresentationStyle = .custom
+        //设置转场代理
+        centerViewControlller.transitioningDelegate = animationManager
+        
         self.present(centerViewControlller, animated: true, completion: nil)
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

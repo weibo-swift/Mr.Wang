@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		578DA4971F05FAD200002029 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578DA4961F05FAD200002029 /* AnimationManager.swift */; };
 		5794FDB91F00A6F400593072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794FDB81F00A6F400593072 /* AppDelegate.swift */; };
 		5794FDBE1F00A6F400593072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5794FDBC1F00A6F400593072 /* Main.storyboard */; };
 		5794FDC31F00A6F400593072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5794FDC21F00A6F400593072 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		3053842A9E5E4B7BEF3C5C0D /* Pods-微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.release.xcconfig"; sourceTree = "<group>"; };
+		578DA4961F05FAD200002029 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		5794FDB51F00A6F400593072 /* 微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5794FDB81F00A6F400593072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5794FDBD1F00A6F400593072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				5794FDEA1F00A8D100593072 /* SystemUntil.swift */,
 				5794FE0A1F00B1B300593072 /* CoreDataManager.swift */,
+				578DA4961F05FAD200002029 /* AnimationManager.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				57A021C31F04E2CA00EE1112 /* FinderViewController.swift in Sources */,
 				57A021C21F04E2CA00EE1112 /* LineLayout.swift in Sources */,
 				5794FDB91F00A6F400593072 /* AppDelegate.swift in Sources */,
+				578DA4971F05FAD200002029 /* AnimationManager.swift in Sources */,
 				5794FE0B1F00B1B300593072 /* CoreDataManager.swift in Sources */,
 				57A021C11F04E2CA00EE1112 /* CenterViewController.swift in Sources */,
 				57A021C41F04E2CA00EE1112 /* HomeTableViewCell.swift in Sources */,
