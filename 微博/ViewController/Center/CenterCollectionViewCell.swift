@@ -23,6 +23,7 @@ class CenterCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         self.imageView = UIImageView()
+        self.backgroundColor = UIColor.clear
         self.addSubview(self.imageView!)
         
     }
@@ -30,7 +31,7 @@ class CenterCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.imageView?.frame = CGRect(x: (self.frame.size.width - 32) / 2, y: (self.frame.size.height - 32) / 2, width: 32, height: 32)
-        self.imageView?.backgroundColor = UIColor.white
+        self.imageView?.backgroundColor = UIColor.clear
     }
     
     required init?(coder aDecoder: NSCoder) {

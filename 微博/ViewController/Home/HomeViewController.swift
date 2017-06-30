@@ -44,8 +44,10 @@ class HomeViewController: UIViewController {
         self.navigationItem.title = "微博"
         self.navigationController?.navigationBar.barTintColor = UIColor.white
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(add))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(search))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "navigationbar_more"), landscapeImagePhone: UIImage(named: "navigationbar_more_highlighted"), style: .plain, target: self, action: #selector(add))
+
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "navigationbar_pop"), landscapeImagePhone: UIImage(named: "navigationbar_pop_highlighted"), style: .plain, target: self, action: #selector(search))
         
         self.view.addSubview(tableView)
     }

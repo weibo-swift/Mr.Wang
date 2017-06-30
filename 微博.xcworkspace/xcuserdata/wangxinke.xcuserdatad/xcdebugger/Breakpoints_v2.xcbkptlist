@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5fae;&#x535a;/ViewController/Center/CenterViewController.swift"
-            timestampString = "520421239.936834"
+            timestampString = "520506313.399686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107">
+            startingLineNumber = "149"
+            endingLineNumber = "149">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -54,11 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5fae;&#x535a;/ViewController/Center/CenterViewController.swift"
-            timestampString = "520421242.782758"
+            timestampString = "520506313.399686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5fae;&#x535a;/ViewController/Center/CenterViewController.swift"
-            timestampString = "520421338.573206"
+            timestampString = "520506313.399686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102">
+            startingLineNumber = "144"
+            endingLineNumber = "144">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

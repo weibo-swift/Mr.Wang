@@ -20,22 +20,17 @@ class CenterViewController: UIViewController {
         return array
     }()
     
+    lazy var pageControl = UIPageControl()
+    lazy var collectionView =  UICollectionView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.white
         
-        let collectionView =  UICollectionView(frame: CGRect(x: 0, y: ScreenHeight - 120 - 200, width: ScreenWidth, height: 200), collectionViewLayout: LineLayout())
-        collectionView.backgroundColor = UIColor.white
-        collectionView.dataSource  = self
-        collectionView.delegate = self
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "new_feature_1")!)
         
-        collectionView.isPagingEnabled = true
-        
-        collectionView.register(CenterCollectionViewCell.self, forCellWithReuseIdentifier: "ImageTextCell")
-        self.view.addSubview(collectionView)
-        
-        
+        self.setCollectionView()
+        self.setPageController()
         self.setMainUI()
     }
 
@@ -43,13 +38,13 @@ class CenterViewController: UIViewController {
 
 extension CenterViewController {
     
-    func setMainUI(){
+    fileprivate func setMainUI(){
         
         let closeButton : UIButton = {
             
             let closeButton = UIButton()
-            closeButton.frame = CGRect(x: (ScreenWidth - 30)/2, y: ScreenHeight - 80, width: 30, height: 30)
-            closeButton.backgroundColor = UIColor.red
+            closeButton.frame = CGRect(x: (ScreenWidth - 30)/2, y: ScreenHeight - 40, width: 30, height: 30)
+            closeButton.setImage(UIImage(named: "common_icon_membership"), for: .normal)
             closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
             
             return closeButton
@@ -59,14 +54,58 @@ extension CenterViewController {
         
     }
     
+    fileprivate func setCollectionView(){
+        
+        collectionView =  UICollectionView(frame: CGRect(x: 0, y: ScreenHeight - 120 - 200, width: ScreenWidth, height: 200), collectionViewLayout: LineLayout())
+        collectionView.backgroundColor = UIColor.clear
+        collectionView.dataSource  = self
+        collectionView.delegate = self
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+        
+        collectionView.isPagingEnabled = true
+        
+        collectionView.register(CenterCollectionViewCell.self, forCellWithReuseIdentifier: "ImageTextCell")
+    
+        self.view.addSubview(collectionView)
+    }
+    
+    fileprivate func setPageController(){
+        
+        pageControl = UIPageControl.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width / 2, height: 30))
+        pageControl.center = CGPoint(x: self.view.frame.size.width / 2, y: self.view.frame.size.height - 120)
+        pageControl.backgroundColor = UIColor.clear
+        // 其他属性设置
+        pageControl.numberOfPages = 2 // 总页数
+        pageControl.currentPage = 0 // 当前页数，默认为0，即第一个，实际数量是0~n-1
+        pageControl.pageIndicatorTintColor = UIColor.gray // 非当前页颜色
+        pageControl.currentPageIndicatorTintColor = UIColor.black // 当前页颜色
+        
+        pageControl.addTarget(self, action: #selector(nextPageView), for: .touchUpInside)
+        
+        self.view.addSubview(pageControl);
+        
+    }
+    
 }
 
 
 extension CenterViewController {
     
-    func close(){
+   @objc fileprivate func close(){
         
         self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
+    @objc fileprivate func nextPageView(){
+        
+        let page = self.pageControl.currentPage
+        // 设置偏移量
+        let offsetX = CGFloat(page) * ScreenWidth
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        self.pageControl.currentPage = page
         
     }
     
@@ -86,11 +125,14 @@ extension CenterViewController : UICollectionViewDelegate, UICollectionViewDataS
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageTextCell", for: indexPath) as! CenterCollectionViewCell
         cell.imageStr = self.imageArray[indexPath.item] as NSString
-        cell.backgroundColor = UIColor.white
-        
+
         return cell
     }
     
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let page = (scrollView.contentOffset.x / ScreenWidth) + 0.5
+        pageControl.currentPage = Int(page)
+    }
 }
 
